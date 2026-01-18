@@ -1,6 +1,4 @@
-/* =====================
-   ROOT & THEME
-===================== */
+
 :root {
   --bg: #0a0d14;
   --surface: #121725;
@@ -41,9 +39,7 @@
   background: var(--accent-2);
   color: var(--accent);
 }
-/* =====================
-   RESET & BASE
-===================== */
+
 * {
   box-sizing: border-box;
 }
@@ -76,9 +72,7 @@ a {
   padding: 24px;
 }
 
-/* =====================
-   HEADER & NAVBAR
-===================== */
+
 header {
   position: sticky;
   top: 0;
@@ -133,9 +127,7 @@ header.scrolled {
               width .4s cubic-bezier(.4,0,.2,1);
 }
 
-/* =====================
-   HERO
-===================== */
+
 .hero {
   display: grid;
   grid-template-columns: 1.2fr .8fr;
@@ -185,9 +177,7 @@ header.scrolled {
    box-shadow: 0 0.2rem 0.5rem var(--text);
 }
 
-/* =====================
-   CARD SYSTEM
-===================== */
+
 .card {
   background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
   border: 1px solid var(--border);
@@ -206,9 +196,7 @@ header.scrolled {
     0 0 0 1px var(--accent-soft);
 }
 
-/* =====================
-   SECTIONS
-===================== */
+
 .section {
   padding: 90px 0;
   
@@ -219,18 +207,14 @@ header.scrolled {
   margin-bottom: 28px;
 }
 
-/* =====================
-   GRID
-===================== */
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* =====================
-   BUTTON
-===================== */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -256,7 +240,7 @@ header.scrolled {
   transform: scale(.97);
 }
 
-/* CONTACT FORM */
+
 #contact form {
   max-width: 520px;
   margin: auto;
@@ -293,7 +277,7 @@ header.scrolled {
   box-shadow: 0 0 10px var(--accent-soft);
 }
 
-/* ICON ANIMATION */
+
 .input-wrapper .icon {
   position: absolute;
   top: 50%;
@@ -311,14 +295,14 @@ header.scrolled {
   animation: floatIconFocus 1.5s ease-in-out infinite, gradientGlow 4s linear infinite;
 }
 
-/* Placeholder text */
+
 #contact input::placeholder,
 #contact textarea::placeholder {
   color: var(--muted);
   opacity: 1;
 }
 
-/* Submit button */
+
 #contact button.btn {
   align-self: flex-center;
   padding: 12px 24px;
@@ -340,9 +324,7 @@ header.scrolled {
 
 #contact button.btn:active {
   transform: scale(0.97);
-}
-
-/* ICON FLOAT ANIMATION */
+} 
 @keyframes floatIcon {
   0%, 100% { transform: translateY(-50%) scale(1); }
   50% { transform: translateY(-55%) scale(1.05); }
@@ -353,7 +335,7 @@ header.scrolled {
   50% { transform: translateY(-58%) scale(1.1); }
 }
 
-/* GRADIENT GLOW EFFECT */
+
 @keyframes gradientGlow {
   0%   { color: #6366f1; filter: drop-shadow(0 0 2px #6366f1); }
   16%  { color: #22d3ee; filter: drop-shadow(0 0 4px #22d3ee); }
@@ -366,9 +348,7 @@ header.scrolled {
 
 
 
-/* =====================
-   REVEAL ANIMATION
-===================== */
+
 .reveal {
   opacity: 0;
   transform: translateY(32px) scale(.98);
@@ -380,9 +360,7 @@ header.scrolled {
   transform: translateY(0) scale(1);
 }
 
-/* =====================
-   FOOTER
-===================== */
+
 footer {
   text-align: center;
   padding: 40px 0;
@@ -390,9 +368,7 @@ footer {
   border-top: 1px solid var(--border);
 }
 
-/* =====================
-   RESPONSIVE
-===================== */
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;

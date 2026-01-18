@@ -1,7 +1,7 @@
-// YEAR
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// TYPING ANIMATION
+
 const text = ['Web Developer', 'Content Creator', 'Front-End Designer'];
 let i = 0, j = 0, current = '', deleting = false;
 const typing = document.getElementById('typing');
@@ -20,14 +20,14 @@ function typeLoop() {
 }
 typeLoop();
 
-// SCROLL REVEAL
+
 const reveals = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('active'); });
 }, { threshold:0.15 });
 reveals.forEach(sec => observer.observe(sec));
 
-// NAVBAR INDICATOR
+
 const navLinks = document.querySelectorAll('.nav-links a');
 const indicator = document.getElementById('indicator');
 
@@ -40,7 +40,7 @@ navLinks.forEach(link => {
   link.addEventListener('click', e => updateIndicator(link));
 });
 
-// Update indicator on scroll to match active section
+
 const sections = document.querySelectorAll('main section');
 window.addEventListener('scroll', () => {
   let scrollPos = window.scrollY + window.innerHeight/2;
